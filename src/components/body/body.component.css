@@ -1,0 +1,17 @@
+.plus {
+  width: 0;
+  margin: 0 50%;
+  /* font-size: 50px; */
+  font-size: 50px;
+  animation: plus 10s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes plus {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
