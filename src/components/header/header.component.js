@@ -74,26 +74,26 @@ class Header extends React.Component {
     return (
       <header className="d-flex head">
         {/* NAV MENU COLUMN*/}
-        <div className="d-xl-block d-block align-items-center col-xl-4 p-0 navMenu slider-menu-hidden">
+        <div className="d-xl-block align-items-center col-xl-4 p-0 navMenu slider-menu-hidden">
           <nav className="position-relative position-lg-static">
-            <ul className="nav d-flex d-xl-flex  justify-content-between align-content-center flex-wrap slider-container">
+            <ul className="nav d-flex d-xl-flex justify-content-between align-content-center flex-wrap slider-container">
               <li className="nav-item ">
-                <a className="nav-link text-light position-relative" href="#">
+                <a className="nav-link text-dark position-relative" href="#">
                   Home
                 </a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link text-light position-relative" href="#">
+                <a className="nav-link text-dark position-relative" href="#">
                   Portfolio
                 </a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link text-light position-relative" href="#">
+                <a className="nav-link text-dark position-relative" href="#">
                   Resume
                 </a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link text-light position-relative" href="#">
+                <a className="nav-link text-dark position-relative" href="#">
                   Contact Info
                 </a>
               </li>
