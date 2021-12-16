@@ -1,0 +1,37 @@
+:root {
+  --bg-body: #f9f9ff;
+  --bg-primary: #f9d74c;
+
+  --text-primary: #454360;
+  --text-secondary: #5e5c7f;
+  --text-red: #ff4c60;
+
+  --red: #ff0000;
+  --blue: #0066ff;
+  --green: #00ff66;
+
+  --bg-slider: rgba(69, 67, 96, 0.9);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.text-red {
+  color: var(--text-red);
+}
+.text-primary:hover {
+  background-color: var(--primary-text) !important;
+}
+
+.bg-danger {
+  background-color: var(--text-red) !important;
+}

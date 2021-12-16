@@ -4,10 +4,9 @@ import Home from "./home-page/home.component";
 
 function Body() {
   return (
-    <div>
+    <section>
       <Home />
-      <div className="plus">+</div>
-    </div>
+    </section>
   );
 }
 

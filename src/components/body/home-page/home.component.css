@@ -3,3 +3,42 @@
   border-radius: 300px;
   width: 100px;
 }
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin {
+  width: 38px;
+  height: 38px;
+  border: 3px var(--text-primary) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+  border: 3px var(--text-red) solid;
+  color: var(--text-red);
+  cursor: pointer;
+}
+
+.contact-me-btn {
+  padding: 6px 24px !important;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-weight: bold;
+  background-color: var(--text-red);
+}
+.contact-me-btn:hover {
+  background-color: var(--red);
+}
