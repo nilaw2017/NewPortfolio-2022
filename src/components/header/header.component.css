@@ -42,6 +42,16 @@
   .fa-close {
     z-index: 99;
   }
+
+  .slider-menu nav ul li a {
+    color: #fff !important;
+    transition: 0.2s;
+  }
+  .slider-menu nav ul li a:hover {
+    color: #fff !important;
+
+    font-weight: bold;
+  }
 }
 .slider-container li a::after {
   content: "";
