@@ -12,6 +12,12 @@ class Header extends React.Component {
       // $(".fa-close").toggleClass("fa-bars");
       // // }, 0);
     });
+    $(".fa-sun-o").click(function () {
+      $(".fa-sun-o").toggleClass("fa-moon-o");
+      $("body").toggleClass("night-mode");
+      $(".text-primary").toggleClass("text-night");
+      $(".fa").toggleClass("text-night");
+    });
   }
   render() {
     return (
@@ -61,9 +67,10 @@ class Header extends React.Component {
             </button>
           </a>
         </div>
+        <i className="d-flex justify-content-end align-items-center col-2 d-xl-none p-1 fa-2x fa  fa-sun-o"></i>
         <i
           onClick={this.onMenuClicked}
-          className="d-flex justify-content-end col-4 d-xl-none p-1 fa-3x fa fa-bars"
+          className="d-flex justify-content-end col-2 d-xl-none p-1 fa-3x fa fa-bars"
         ></i>
       </header>
     );

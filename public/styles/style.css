@@ -18,6 +18,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  transition: 10s;
+}
 
 .text-primary {
   color: var(--text-primary) !important;
@@ -34,4 +37,14 @@
 
 .bg-danger {
   background-color: var(--text-red) !important;
+}
+
+.night-mode {
+  background-color: var(--text-primary) !important;
+  color: var(--bg-body) !important;
+  border-color: var(--bg-body) !important;
+}
+.text-night {
+  color: var(--bg-body) !important;
+  border-color: var(--bg-body) !important;
 }
