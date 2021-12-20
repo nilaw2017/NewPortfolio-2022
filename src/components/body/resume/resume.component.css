@@ -1,0 +1,15 @@
+.timeline {
+  border-left: 1px solid var(--yellow);
+  padding-left: 20px;
+}
+
+.timeline div::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-red);
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  border-radius: 50%;
+}

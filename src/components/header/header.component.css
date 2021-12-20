@@ -2,9 +2,6 @@
   .position-lg-static {
     position: static !important;
   }
-  .test {
-    position: static !important;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -44,8 +41,14 @@
     color: var(--bg-body) !important;
     font-weight: bold;
   }
+  .nav-link {
+    color: #fff !important;
+  }
+  .nav-link:hover {
+    color: #fff !important;
+  }
 }
-.slider-container li a::after {
+.slider-container aside a::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -56,7 +59,7 @@
   font-weight: bolder;
   transition: 1s;
 }
-.slider-container li a:hover::after {
+.slider-container aside a:hover::after {
   transform: scale(1);
 }
 
@@ -65,9 +68,11 @@
   width: 100px;
   padding: 0 !important;
   transition: 0.2s;
+  color: var(--text-primary);
 }
 .nav-link:hover {
   font-weight: bold;
+  color: var(--text-primary);
 }
 
 .download-resume-btn {

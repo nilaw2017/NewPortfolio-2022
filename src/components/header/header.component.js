@@ -1,7 +1,6 @@
 import React from "react";
 import "./header.component.css";
 import $ from "jquery";
-import { findDOMNode } from "react-dom";
 
 class Header extends React.Component {
   componentDidMount() {
@@ -23,33 +22,30 @@ class Header extends React.Component {
     return (
       <header className="d-flex head">
         {/* NAV MENU COLUMN*/}
-        <div className="d-xl-block align-items-center col-xl-4 p-0 navMenu slider-menu-hidden">
-          <nav className="position-relative position-lg-static">
-            <ul className="nav d-flex d-xl-flex justify-content-between align-content-center flex-wrap slider-container">
-              <li className="nav-item ">
-                <a className="nav-link text-dark position-relative" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link text-dark position-relative" href="#">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link text-dark position-relative" href="#">
-                  Resume
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link text-dark position-relative" href="#">
-                  Contact Info
-                </a>
-              </li>
-            </ul>
+        <div className="d-flex col-xl-4 p-0 navMenu slider-menu-hidden align-items-center">
+          <nav className="col-xl-12 position-relative position-xl-static d-flex justify-content-xl-between justify-content-between align-items-center slider-container">
+            <aside className="position-relative">
+              <a className="nav-link text-primary" href="#">
+                Home
+              </a>
+            </aside>
+            <aside className="position-relative">
+              <a className="nav-link text-primary" href="#">
+                About Us
+              </a>
+            </aside>
+            <aside className="position-relative">
+              <a className="nav-link text-primary" href="#">
+                Resume
+              </a>
+            </aside>
+            <aside className="position-relative">
+              <a className="nav-link text-primary" href="#">
+                Contact Info
+              </a>
+            </aside>
           </nav>
         </div>
-        {/* {onMenuClicked} */}
 
         {/* LOGO COLUMN */}
         <div className="col-xl-4 col-4 d-flex justify-content-md-start justify-content-xl-center align-items-center">
@@ -57,7 +53,7 @@ class Header extends React.Component {
         </div>
 
         {/* RESUME COLUMN */}
-        <div className="col-xl-4 col-4 d-flex download-resume-container justify-content-center justify-content-xl-end">
+        <div className="col-xl-3 col-4 d-flex download-resume-container justify-content-center justify-content-xl-end">
           <a href="./assets/BCA2019.pdf" download="BCA" className="p-0">
             <button
               download="BCA2019.pdf"
@@ -67,7 +63,9 @@ class Header extends React.Component {
             </button>
           </a>
         </div>
-        <i className="d-flex justify-content-end align-items-center col-2 d-xl-none p-1 fa-2x fa  fa-sun-o"></i>
+
+        {/* NIGHT MODE */}
+        <i className="d-flex justify-content-end align-items-center col-2 col-xl-1 p-1 fa-2x fa  fa-sun-o"></i>
         <i
           onClick={this.onMenuClicked}
           className="d-flex justify-content-end col-2 d-xl-none p-1 fa-3x fa fa-bars"

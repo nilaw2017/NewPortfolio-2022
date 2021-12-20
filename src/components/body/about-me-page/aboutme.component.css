@@ -1,0 +1,20 @@
+div h6:nth-child(odd) {
+  color: var(--text-secondary);
+}
+
+.download-cv-btn {
+  border: 1px var(--yellow) solid;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.fa-cloud-download {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--yellow);
+  border-radius: 50%;
+  background-color: var(--yellow);
+  right: -1px;
+  top: -1px;
+  color: var(--red);
+}

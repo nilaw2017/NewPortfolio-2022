@@ -9,14 +9,18 @@ class Contact extends Component {
     };
   }
   changes = (e) => {
-    const { name, value } = e.target;
-    console.log("name >>", value);
-    return value;
+    const { value } = e.target;
+    // console.log("Email >>", value);
+    this.setState({
+      email: value,
+    });
+    console.log(this.state.email);
+    // return value;
   };
-  afterSubmit = () => {
-    console.log(this.changes);
-    return this.changes;
-  };
+  // afterSubmit = () => {
+  //   console.log(this.changes);
+  //   return this.changes;
+  // };
 
   render() {
     return (
@@ -32,8 +36,7 @@ class Contact extends Component {
                 Contact Us
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify.
+                Blabla black sheep
               </p>
             </div>
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -41,7 +44,7 @@ class Contact extends Component {
                 <input
                   type="hidden"
                   name="_subject"
-                  value={this.afterSubmit}
+                  value={this.state.email}
                 ></input>
                 <input type="hidden" name="_template" value="table"></input>
                 <div className="p-2 w-1/2">
@@ -115,11 +118,10 @@ class Contact extends Component {
                   </button>
                 </div>
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a className="text-indigo-500">example@email.com</a>
-                  <p className="leading-normal my-5">
-                    49 Smith St.
-                    <br></br>Saint Cloud, MN 56301
-                  </p>
+                  <a className="text-indigo-500">
+                    nilaw.manandhar2016@gmail.com
+                  </a>
+                  <p className="leading-normal my-5">Kalanki, Kathmandu</p>
                 </div>
               </div>
             </div>
