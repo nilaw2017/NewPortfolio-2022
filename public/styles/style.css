@@ -64,8 +64,3 @@ body {
   font-size: 3.5rem;
   text-shadow: 0px 7px 5px var(--text-primary);
 }
-
-.timeline {
-  border-left: 1px solid var(--yellow);
-  padding-left: 20px;
-}

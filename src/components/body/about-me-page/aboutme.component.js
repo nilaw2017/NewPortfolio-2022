@@ -4,7 +4,7 @@ import "./aboutme.component.css";
 class AboutMe extends Component {
   render() {
     return (
-      <section>
+      <section id="about-me">
         <article className="d-flex justify-content-center text-bold">
           <span className="menu-header text-primary pr-3">ABOUT</span>
           <span className="menu-header text-red">ME</span>

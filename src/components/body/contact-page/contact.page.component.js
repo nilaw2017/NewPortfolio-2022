@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./contact.page.component.css";
 const mail = "https://formsubmit.co/fc1b4d2877825023a22953a10a6e17b0";
 
 class Contact extends Component {
@@ -24,110 +25,81 @@ class Contact extends Component {
 
   render() {
     return (
-      <>
-        <section className="text-gray-600 body-font relative">
-          <form
-            className="container px-5 py-24 mx-auto"
-            action={mail}
-            method="POST"
-          >
-            <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                Contact Us
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Blabla black sheep
-              </p>
+      <section id="contact mb-5">
+        <form action={mail} method="POST">
+          <article className="d-flex justify-content-center text-bold">
+            <span className="menu-header text-primary">CONTACT</span>
+          </article>
+          <section className="d-block border d-xl-flex">
+            <div className="col-xl-6 mt-5">
+              <h2>GET IN TOUCH</h2>
+              <div className="d-flex mt-5">
+                <i className="fa fa-child fa-2x mr-3 col-1"></i>
+                <h5>Kalanki, Kathmandu</h5>
+              </div>
+              <div className="d-flex mt-5">
+                <i className="fa fa-envelope fa-2x mr-3 col-1"></i>
+                <h5>nilaw2016@gmail.com</h5>
+              </div>
+              <div className="d-flex mt-5">
+                <i className="fa fa-phone fa-2x mr-3 col-1"></i>
+                <h5>9841272444</h5>
+              </div>
             </div>
-            <div className="lg:w-1/2 md:w-2/3 mx-auto">
-              <div className="flex flex-wrap -m-2">
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value={this.state.email}
-                ></input>
-                <input type="hidden" name="_template" value="table"></input>
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label
-                      htmlFor="name"
-                      className="leading-7 text-sm text-gray-600"
-                    >
-                      Name
-                    </label>
+            <div className="col-xl-6 mt-5">
+              <h2>CONTACT FORM</h2>
+              <div className="inputs">
+                <div>
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value={this.state.email}
+                  ></input>
+                  <input type="hidden" name="_template" value="table"></input>
+                  <div className="mt-4">
                     <input
                       name="name"
                       type="text"
                       id="name"
                       name="name"
                       placeholder="Name"
-                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
-                </div>
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label
-                      htmlFor="email"
-                      className="leading-7 text-sm text-gray-600"
-                    >
-                      Email
-                    </label>
+                  <div className="mt-4">
                     <input
                       onChange={this.changes}
                       name="email"
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="Email Address"
-                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      placeholder="E-mail Address"
                     />
                   </div>
-                </div>
-                <label htmlFor="phone">Phone Number</label>
-                <input
-                  name="phone"
-                  type="number"
-                  placeholder="Your phone Number"
-                ></input>
 
-                <div className="p-2 w-full">
-                  <div className="relative">
-                    <label
-                      htmlFor="message"
-                      className="leading-7 text-sm text-gray-600"
-                    >
-                      Message
-                    </label>
+                  <div className="mt-4">
                     <textarea
                       // onChange={}
                       name="message"
                       id="message"
                       name="message"
-                      placeholder="Write your messages here..."
-                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                      placeholder="Message here..."
                     ></textarea>
                   </div>
-                </div>
-                <div className="p-2 w-full">
-                  <button
-                    // onSubmit={this.afterSubmit}
-                    className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                  >
-                    Submit
-                  </button>
-                </div>
-                <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a className="text-indigo-500">
-                    nilaw.manandhar2016@gmail.com
-                  </a>
-                  <p className="leading-normal my-5">Kalanki, Kathmandu</p>
+                  <div className="mt-4">
+                    <button
+                      // onSubmit={this.afterSubmit}
+                      className="btn contact-btn"
+                    >
+                      SEND MESSAGE
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </form>
-        </section>
-      </>
+          </section>
+        </form>
+        <hr></hr>
+      </section>
     );
   }
 }

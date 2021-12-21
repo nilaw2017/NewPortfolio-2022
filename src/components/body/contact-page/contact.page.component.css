@@ -1,0 +1,22 @@
+input,
+textarea,
+.contact-btn {
+  width: 100%;
+  background-color: var(--bg-body);
+  border: 1px solid var(--text-secondary);
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--bg-body);
+  border: 1px solid var(--bg-body);
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+.contact-btn {
+  background-color: transparent;
+  border: var(--text-red) 1px solid;
+}

@@ -3,7 +3,7 @@ import "./resume.component.css";
 export default class Resume extends Component {
   render() {
     return (
-      <section className="mt-5">
+      <section id="resume" className="mt-5">
         <article className="d-flex justify-content-center text-bold">
           <span className="menu-header text-primary">RESUME</span>
         </article>

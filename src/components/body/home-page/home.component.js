@@ -4,7 +4,7 @@ import Typical from "react-typical";
 import "./home.component.css";
 export default function Home() {
   return (
-    <section className="text-center mt-5">
+    <section id="home" className="text-center mt-5">
       <img
         src={process.env.PUBLIC_URL + "/assets/images/myAvatar.png"}
         className="myAvatar mt-5 mb-5"

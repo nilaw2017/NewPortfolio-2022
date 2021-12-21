@@ -25,23 +25,23 @@ class Header extends React.Component {
         <div className="d-flex col-xl-4 p-0 navMenu slider-menu-hidden align-items-center">
           <nav className="col-xl-12 position-relative position-xl-static d-flex justify-content-xl-between justify-content-between align-items-center slider-container">
             <aside className="position-relative">
-              <a className="nav-link text-primary" href="#">
+              <a className="nav-link text-primary" href="#home">
                 Home
               </a>
             </aside>
             <aside className="position-relative">
-              <a className="nav-link text-primary" href="#">
-                About Us
+              <a className="nav-link text-primary" href="#about-me">
+                About Me
               </a>
             </aside>
             <aside className="position-relative">
-              <a className="nav-link text-primary" href="#">
+              <a className="nav-link text-primary" href="#resume">
                 Resume
               </a>
             </aside>
             <aside className="position-relative">
-              <a className="nav-link text-primary" href="#">
-                Contact Info
+              <a className="nav-link text-primary" href="#contact">
+                Contact
               </a>
             </aside>
           </nav>
