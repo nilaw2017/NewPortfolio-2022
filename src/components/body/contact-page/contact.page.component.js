@@ -63,6 +63,7 @@ class Contact extends Component {
                       id="name"
                       name="name"
                       placeholder="Name"
+                      required
                     />
                   </div>
                   <div className="mt-4">
@@ -73,6 +74,7 @@ class Contact extends Component {
                       id="email"
                       name="email"
                       placeholder="E-mail Address"
+                      required
                     />
                   </div>
 
@@ -83,6 +85,7 @@ class Contact extends Component {
                       id="message"
                       name="message"
                       placeholder="Message here..."
+                      required
                     ></textarea>
                   </div>
                   <div className="mt-4">
