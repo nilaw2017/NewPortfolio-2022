@@ -34,15 +34,15 @@ class Contact extends Component {
             <div className="col-xl-6 mt-5">
               <h2>GET IN TOUCH</h2>
               <div className="d-flex mt-5">
-                <i className="fa fa-child fa-2x mr-3 col-1"></i>
+                <i className="fa fa-child fa-2x  col-2"></i>
                 <h5>Kalanki, Kathmandu</h5>
               </div>
               <div className="d-flex mt-5">
-                <i className="fa fa-envelope fa-2x mr-3 col-1"></i>
+                <i className="fa fa-envelope fa-2x  col-2"></i>
                 <h5>nilaw2016@gmail.com</h5>
               </div>
               <div className="d-flex mt-5">
-                <i className="fa fa-phone fa-2x mr-3 col-1"></i>
+                <i className="fa fa-phone fa-2x  col-2"></i>
                 <h5>9841272444</h5>
               </div>
             </div>
