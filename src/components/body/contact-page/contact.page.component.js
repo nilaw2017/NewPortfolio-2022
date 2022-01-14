@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./contact.page.component.css";
-const mail = "https://formsubmit.co/fc1b4d2877825023a22953a10a6e17b0";
+const mail = "https://formsubmit.co/1d6ca157f1d532fecb7009511acff37c";
 
 class Contact extends Component {
   constructor(props) {
